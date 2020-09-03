@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Learn GitHub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Grand+Hotel&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <title>
+        Wine pairing.
+    </title>
+    <link rel="icon" type="image/png" href="https://www.pngkey.com/png/detail/13-134879_glass-silouhette-clip-art-at-clker-vector-red.png"/>
+
 </head>
 <body>
-  <h1>Learn GitHub</h1>
-  <p>Just a throwaway index.html page.</p>
+    <main>
+        <header class="banner">
+            <h1>Find the perfect Wine pairing</h1>
+            <p>Find a wine that goes well with a food. Food can be a dish name ("steak"), an ingredient name ("salmon"), or a cuisine ("italian").</p>
+            <section id="food-search">
+            <input id="food-input" type="text" placeholder="Italian..."/>
+            <button id="food-submit">Submit</button>
+        </section>
+        </header>
+        <section id='intro' class="hidden"> 
+          <p>This would go well with...</p>
+        </section>
+        <section id="results" class="hidden">
+          <div id="wineDescription">
+            <div id="itemName">
+              <h2>Super Duper Wine with a ton of text because some wine titles are obnoxiously long</h2>
+              <a href="#"><img src="https://placedog.net/321/231"/></a>
+            </div>
+            <div id="pairedWine">
+              <h3>Paired Wines:</h3>
+              <ul id="paired-wines-list" aria-live="polite">
+                <li>Beer</li>
+                <li>Totally not wine</li>
+                <li>Orange Juice</li>
+              </ul>
+            </div>
+          </div>
+          <div id="descriptionText">
+            <p>Please fill this with a big blob of text</p>
+          </div>
+        </section>
+        
+    </main>
+    
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </html>
